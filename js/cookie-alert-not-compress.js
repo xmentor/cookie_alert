@@ -39,11 +39,11 @@ var  cookie_alert = {
         }
         if (this.checkCookie()) {
             if (this.displayed()) {
-                var styleElement = document.createElement("style");
+                var styleElement = document.createElement("style"),
+                    blockElement = document.createElement("div");
                 styleElement.innerHTML=".cookie-alert{background: " + this.options.color + "; color: " + this.options.text_color + "; " + this.options.position + ": 0;}";
                 document.head.appendChild(styleElement);
                 
-                var blockElement = document.createElement("div");
                 blockElement.classList.add("cookie-alert");
                 blockElement.setAttribute("title","Kliknij by zamknąć!");
                 blockElement.innerHTML = "<div class='alert-content'>" + this.options.text + " | <a href='" + this.options.info_cookie + "' title='Więcej informacji o ciasteczkach' class='info-cookie' target='_blank'>Więcej o ciasteczkach</a></div>";
