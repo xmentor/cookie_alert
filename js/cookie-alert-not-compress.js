@@ -3,7 +3,7 @@ var  cookie_alert = {
         color: '#000',
         text_color: '#fff',
         position: 'bottom',
-        text: 'Ta strona wykorzystuje pliki cookies!',
+        text: 'Niniejsza strona krzysta z plików cookies, korzystając ze strony wyrażasz zgodę na używanie cookies, zgodnie z ustawieniami przeglądarki!',
         info_cookie: 'http://wszystkoociasteczkach.pl/'
     },
     closedAlert: function () {
@@ -37,8 +37,6 @@ var  cookie_alert = {
         for (var i in event) {
             this.options[i] = event[i];
         }
-        alert(this.checkCookie());
-        alert(this.closedAlert());
         if (this.checkCookie()) {
             if (!this.closedAlert()) {
                 var styleElement = document.createElement("style"),
