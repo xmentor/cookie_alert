@@ -48,11 +48,11 @@ var  cookie_alert = {
                 document.body.insertBefore(blockElement, document.body.firstChild);
                 
                 this.closeAlert();
-            }/* else {
+            } else {
                 window.console.log("Komunikat był wczesniej wyświetlony");
-            }*/
-        }/* else {
+            }
+        } else {
             window.console.log("Brak plików cookies");
-        }*/
+        }
     }
 };
