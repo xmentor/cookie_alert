@@ -31,6 +31,7 @@ var  cookie_alert = {
     },
     init: function (event) {
         'use strict';
+        document.cookie = "test:true;";
         for (var i in event) {
             this.options[i] = event[i];
         }
