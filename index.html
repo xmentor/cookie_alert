@@ -9,15 +9,17 @@
         <link rel="stylesheet/less" href="css/cookie-alert.less"> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>
         <style>
-            body{margin: 0;}
+            body{margin: 0; font-family: arial, sans-serif;}
+            h2,h4{text-align: center;}
         </style>
     </head>
     <body>
+        <h2>By zamknąć pasek z informacją o plikach cookies, nie trzeba już szukać małego "x", wystarczy kliknąć w dowolne miejsce na pasku.</h2>
+        <h4>Po kliknieciu paska z informacją o plikach cookies, nie pojawi się on po odswieżeniu strony - jedynie po usunięciu wpisu z lokalnego mgazynu.</h4>
         <script src="js/main.js"></script>
         <script>
             cookie_alert.init({
-                font: 'Arial, sans-serif',
-                color: 'rgba(0,255,0,.6)',
+                color: 'rgba(155,115,151,.9)',
                 text_color: '#fff',
                 position: 'bottom',
                 text: 'Niniejsza strona krzysta z plików cookies, korzystanie z tej strony oznacza zgodę na ich wykorzystywanie!',

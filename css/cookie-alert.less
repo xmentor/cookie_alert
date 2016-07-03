@@ -34,6 +34,11 @@
         text-align: center;
         .info-cookie{
             color: inherit;
+            .transition(text-shadow .2s linear);
+            &:hover{
+                text-shadow: 0 0 10px rgba(0,0,0,.8);
+                .transition(text-shadow .2s linear);
+            }
         }
     }
 }
