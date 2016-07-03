@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Cookie Alert | Demo</title>
+        <meta name="description" content="demo">
+        <meta name="keywords" content="demo">
+        <!--<link rel="stylesheet" href="css/reset.css">-->
+        <link rel="stylesheet/less" href="css/cookie-alert.less"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>
+        <style>
+            body{margin: 0;}
+        </style>
+    </head>
+    <body>
+        <script src="js/main.js"></script>
+        <script>
+            cookie_alert.init({
+                font: 'Arial, sans-serif',
+                color: 'rgba(0,255,0,.6)',
+                text_color: '#fff',
+                position: 'bottom',
+                text: 'Niniejsza strona krzysta z plików cookies, korzystanie z tej strony oznacza zgodę na ich wykorzystywanie!',
+                info_cookie: 'http://wszystkoociasteczkach.pl/'
+            });
+        </script>
+    </body>
+</html>
