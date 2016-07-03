@@ -32,7 +32,7 @@ var  cookie_alert = {
     init: function (event) {
         'use strict';
         /* line test - start */
-        document.cookie = 'test=txt; expires=Sun, 16 Jul 3567 06:23:41 GMT; path=/;'; // line test
+        //document.cookie = 'test=txt; expires=Sun, 16 Jul 3567 06:23:41 GMT; path=/;'; // line test
         /* line test - end */
         for (var i in event) {
             this.options[i] = event[i];
