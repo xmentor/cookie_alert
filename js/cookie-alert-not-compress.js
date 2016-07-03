@@ -31,8 +31,9 @@ var  cookie_alert = {
     },
     init: function (event) {
         'use strict';
-        document.cookie = 'test=txt; expires=Sun, 16 Jul 3567 06:23:41 GMT; path=/;';
-        alert(document.cookie);
+        /* line test - start */
+        document.cookie = 'test=txt; expires=Sun, 16 Jul 3567 06:23:41 GMT; path=/;'; // line test
+        /* line test - end */
         for (var i in event) {
             this.options[i] = event[i];
         }
@@ -50,11 +51,11 @@ var  cookie_alert = {
                 document.body.insertBefore(blockElement, document.body.firstChild);
                 
                 this.closeAlert();
-            } else {
+            }/* else {
                 window.console.log("Komunikat był wczesniej wyświetlony");
-            }
-        } else {
+            }*/
+        }/* else {
             window.console.log("Brak plików cookies");
-        }
+        }*/
     }
 };
