@@ -6,12 +6,12 @@ var  cookie_alert = {
         text: 'Ta strona wykorzystuje pliki cookies!',
         info_cookie: 'http://wszystkoociasteczkach.pl/'
     },
-    displayed: function () {
+    closedAlert: function () {
         'use strict';
-        if (localStorage.getItem("displayed-alert") === null) {//test
-            return true;
-        } else {
+        if (localStorage.getItem("close-alert") === null) {//test
             return false;
+        } else {
+            return true;
         }
     },
     checkCookie: function () {
@@ -26,7 +26,7 @@ var  cookie_alert = {
         'use strict';
         document.querySelector(".cookie-alert").addEventListener("click", function () {
             this.remove();
-            localStorage.setItem("displayed-alert", true);
+            localStorage.setItem("close-alert", true);
         }, false);
     },
     init: function (event) {
@@ -37,8 +37,10 @@ var  cookie_alert = {
         for (var i in event) {
             this.options[i] = event[i];
         }
+        alert(this.checkCookie());
+        alert(this.closedAlert());
         if (this.checkCookie()) {
-            if (this.displayed()) {
+            if (!this.closedAlert()) {
                 var styleElement = document.createElement("style"),
                     blockElement = document.createElement("div");
                 styleElement.innerHTML=".cookie-alert{background: " + this.options.color + "; color: " + this.options.text_color + "; " + this.options.position + ": 0;}";
