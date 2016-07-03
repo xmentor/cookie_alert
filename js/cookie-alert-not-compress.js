@@ -31,7 +31,7 @@ var  cookie_alert = {
     },
     init: function (event) {
         'use strict';
-        document.cookie = 'byebye_cookieval=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=127.0.0.1'
+        document.cookie = 'test=txt; expires=Sun, 16 Jul 3567 06:23:41 GMT; path=/;';
         alert(document.cookie);
         for (var i in event) {
             this.options[i] = event[i];
