@@ -1,8 +1,9 @@
 # Cookie Alert
-
+_________
 Wersja demonstracyjna: [Cookie Alert | Demo](https://xmentor.github.io/cookie_alert)
 
 # Instalacja
+_________
 * Pobierz pliki [Cookie Alert | Demo](https://github.com/xmentor/cookie_alert/archive/master.zip)
 
 * Plik `cookie-alert.min.css` zalinkuj w sekcji head:
@@ -20,7 +21,9 @@ Wersja demonstracyjna: [Cookie Alert | Demo](https://xmentor.github.io/cookie_al
         <script src="scieżka_dostępu/cookie-alert.min.js"></script>
     </body>
     ```    
+    
 # Ustawienia
+_________
 * Ustawienia dodajemy po `<script src="scieżka_dostępu/cookie-alert.min.js"></script>`:
 
     ```
