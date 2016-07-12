@@ -21,7 +21,7 @@ Wersja demonstracyjna: [Cookie Alert | Demo](https://xmentor.github.io/cookie_al
     </body>
     ```    
 # Ustawienia
-    Opcjonalnie:
+* Ustawienia dodajemy po `<script src="scieżka_dostępu/cookie-alert.min.js"></script>`
     ```
     <script>
         cookie_alert.init({
