@@ -1,9 +1,7 @@
 # Cookie Alert
-_________
 Wersja demonstracyjna: [Cookie Alert | Demo](https://xmentor.github.io/cookie_alert)
 
 # Instalacja
-_________
 * Pobierz pliki [Cookie Alert](https://github.com/xmentor/cookie_alert/archive/master.zip)
 
 * Plik `cookie-alert.min.css` zalinkuj w sekcji head:
@@ -24,7 +22,6 @@ _________
     ```    
     
 # Ustawienia
-_________
 * Ustawienia są opcjonalne
 * Ustawienia dodajemy pod podpiętym skryptem `cookie-alert.min.js`:
 
@@ -41,4 +38,4 @@ _________
     ```
     
 # Licencja
-<a href="https://github.com/xmentor/cookie_alert/blob/master/LICENSE">Licencja MIT</a>
+[Licencja MIT](https://github.com/xmentor/cookie_alert/blob/master/LICENSE)
