@@ -8,7 +8,7 @@ var  cookie_alert = {
     },
     closedAlert: function () {
         'use strict';
-        if (localStorage.getItem("close-alert") === null) {//test
+        if (localStorage.getItem("close-alert") === null) {
             return false;
         } else {
             return true;
@@ -25,14 +25,19 @@ var  cookie_alert = {
     closeAlert: function () {
         'use strict';
         document.querySelector(".cookie-alert").addEventListener("click", function () {
-            this.remove();
             localStorage.setItem("close-alert", true);
+            this.classList.add("fade-out");
+            window.setInterval(() => {
+                if (window.getComputedStyle(this, null).getPropertyValue("opacity") == "0") {
+                    this.remove();
+                }
+            }, 600);
         }, false);
     },
     init: function (event) {
         'use strict';
         /* line test - start */
-        document.cookie = 'test=txt; expires=Sun, 16 Jul 3567 06:23:41 GMT; path=/;'; // line test
+        //document.cookie = 'test=txt; expires=Sun, 16 Jul 3567 06:23:41 GMT; path=/;'; // line test
         /* line test - end */
         for (var i in event) {
             this.options[i] = event[i];
@@ -46,7 +51,7 @@ var  cookie_alert = {
                 
                 blockElement.classList.add("cookie-alert");
                 blockElement.setAttribute("title","Kliknij by zamknąć!");
-                blockElement.innerHTML = "<div class='alert-content'>" + this.options.text + " | <a href='" + this.options.info_cookie + "' title='Więcej informacji o ciasteczkach' class='info-cookie' target='_blank'>Więcej o ciasteczkach</a></div>";
+                blockElement.innerHTML = `<div class='alert-content'>${this.options.text} | <a href='${this.options.info_cookie}' title='Więcej informacji o ciasteczkach' class='info-cookie' target='_blank'> Więcej o ciasteczkach</a></div>`;
                 document.body.appendChild(blockElement);
                 document.body.insertBefore(blockElement, document.body.firstChild);
                 
