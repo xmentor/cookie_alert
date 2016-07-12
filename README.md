@@ -4,7 +4,7 @@ Wersja demonstracyjna: [Cookie Alert | Demo](https://xmentor.github.io/cookie_al
 
 # Instalacja
 _________
-* Pobierz pliki [Cookie Alert | Demo](https://github.com/xmentor/cookie_alert/archive/master.zip)
+* Pobierz pliki [Cookie Alert](https://github.com/xmentor/cookie_alert/archive/master.zip)
 
 * Plik `cookie-alert.min.css` zalinkuj w sekcji head:
     ```
