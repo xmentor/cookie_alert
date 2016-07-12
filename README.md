@@ -15,6 +15,7 @@ _________
     </head>
     ```
 * Plik `cookie-alert.min.js` zalinkuj w sekcji body przed zamknięciem tego znacznika:
+
     ```
     <body>
         // some code
