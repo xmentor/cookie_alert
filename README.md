@@ -12,7 +12,7 @@ Wersja demonstracyjna: [Cookie Alert | Demo](https://xmentor.github.io/cookie_al
         // some code
     </head>
     ```
-* Plik `cookie-alert.min.js` zalinkuj w sekcji body przed zamknięciem tego znacznika:
+* Plik `cookie-alert.min.js` podepnij w sekcji body przed zamknięciem tego znacznika:
 
     ```
     <body>
