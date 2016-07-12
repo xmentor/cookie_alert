@@ -25,7 +25,8 @@ _________
     
 # Ustawienia
 _________
-* Ustawienia dodajemy po `<script src="scieżka_dostępu/cookie-alert.min.js"></script>`:
+* Ustawienia są opcjonalne
+* Ustawienia dodajemy pod podpiętym skryptem `cookie-alert.min.js`:
 
     ```
     <script>
